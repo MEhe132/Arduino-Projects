@@ -1,0 +1,17 @@
+# Ignore all Arduino build artifacts except *.ino.hex (kept for Proteus simulation)
+build/**
+!build/**/
+!build/**/*.ino.hex
+
+# Explicitly ignore extra compiled binary extensions anywhere in the repo
+*.elf
+*.eep
+*.bin
+*.with_bootloader.hex
+*.with_bootloader.bin
+
+# OS and Proteus temporary files
+.DS_Store
+Thumbs.db
+*.pdsbad
+*.workspace
